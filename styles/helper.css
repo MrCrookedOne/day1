@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html,
+body {
+  --app-font-size: 1rem;
+  font-family: var(--app-font-family-poppins);
+}
+:root {
+  --primary-text-color: #1b96da;
+  --primary-text-color-700: #1b97da70;
+  --secondary-text-color: black;
+  --secondary-text-color-200: rgba(0, 0, 0, 0.2);
+  --secondary-text-color-500: rgba(0, 0, 0, 0.5);
+  --secondary-text-color-800: rgba(0, 0, 0, 0.8);
+  --tertiary-text-color: #333333;
+
+  --primary-sub-text-color: #0029ff;
+  --secondary-sub-text-color: #5e5873;
+  --tertiary-sub-text-color: #021442;
+
+  --primary-background-color: rgb(255, 255, 255);
+  --secondary-background-color: #000000;
+  --tertiary-background-color: #fafafa;
+
+  --primary-box-shadow: 0px 0px 8px 0px #00000030;
+  --primary-spacing: 2rem;
+  --primary-border-radius: 0.6rem;
+
+  --max-container-width: calc(100% - 160px);
+  --position-relative: relative;
+
+  /* Font/text values */
+  --app-font-family-poppins: "Poppins", sans-serif;
+  --app-font-style-normal: normal;
+  --app-font-weight-bold: bold;
+  --app-font-weight-normal: normal;
+  --app-font-weight-500: 500;
+  --app-font-weight-medium: 600;
+  --app-font-size-8: calc(var(--app-font-size) * 0.5);
+  --app-font-size-10: calc(var(--app-font-size) * 0.625);
+  --app-font-size-12: calc(var(--app-font-size) * 0.75);
+  --app-font-size-14: calc(var(--app-font-size) * 0.875);
+  --app-font-size-15: calc(var(--app-font-size) * 0.9375);
+  --app-font-size-16: calc(var(--app-font-size) * 1);
+  --app-font-size-17: calc(var(--app-font-size) * 1.0625);
+  --app-font-size-18: calc(var(--app-font-size) * 1.125);
+  --app-font-size-20: calc(var(--app-font-size) * 1.25);
+  --app-font-size-22: calc(var(--app-font-size) * 1.375);
+  --app-font-size-25: calc(var(--app-font-size) * 1.5625);
+  --app-font-size-28: calc(var(--app-font-size) * 1.75);
+  --app-font-size-30: calc(var(--app-font-size) * 1.875);
+  --app-font-size-35: calc(var(--app-font-size) * 2.1875);
+  --app-font-size-40: calc(var(--app-font-size) * 2.5);
+  --app-font-size-45: calc(var(--app-font-size) * 2.8125);
+  --app-font-size-55: calc(var(--app-font-size) * 3.4375);
+  --app-font-size-100: calc(var(--app-font-size) * 6.25);
+  --app-character-spacing-0: 0px;
+  --app-character-spacing--3-3: calc(var(--app-font-size) * (-0.2062));
+  --app-line-spacing-17: calc(var(--app-font-size) * 1.0625);
+  --app-line-spacing-28: calc(var(--app-font-size) * 1.75);
+  --app-line-spacing-30: calc(var(--app-font-size) * 1.875);
+  --app-line-spacing-32: calc(var(--app-font-size) * 2);
+  --app-line-spacing-34: calc(var(--app-font-size) * 2.125);
+  --app-line-spacing-35: calc(var(--app-font-size) * 2.1875);
+  --app-line-spacing-38: calc(var(--app-font-size) * 2.375);
+  --app-line-spacing-39: calc(var(--app-font-size) * 2.4375);
+  --app-line-spacing-40: calc(var(--app-font-size) * 2.5);
+  --app-line-spacing-41: calc(var(--app-font-size) * 2.5625);
+  --app-line-spacing-42: calc(var(--app-font-size) * 2.625);
+  --app-line-spacing-48: calc(var(--app-font-size) * 3);
+  --app-line-spacing-51: calc(var(--app-font-size) * 3.1875);
+  --app-line-spacing-77: calc(var(--app-font-size) * 4.8125);
+  --app-line-spacing-140: calc(var(--app-font-size) * 8.75);
+  --app-text-transform-uppercase: uppercase;
+  --app-text-transform-titlecase: capitalize;
+}
+
+.text-ellipse {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Buttons */
+.app-button {
+  border-radius: calc(var(--primary-border-radius) / 1.6);
+  border: none !important;
+  outline: none;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  background: var(--button-background-color);
+}
+
+.button-primary {
+  --button-background-color: var(--primary-background-color);
+  color: var(--secondary-text-color);
+}
+.button-secondary {
+  --button-background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+}
+.app-button:focus {
+  border-color: var(--button-background-color);
+  outline: none;
+}
+.button-small {
+  padding: calc(var(--primary-spacing) / 4) calc(var(--primary-spacing) / 4.8);
+}
+.button-md {
+  padding: calc(var(--primary-spacing) / 5) calc(var(--primary-spacing) / 2.3);
+  font-size: var(--app-font-size-12);
+}
+.button-lg {
+  padding: calc(var(--primary-spacing) / 5) calc(var(--primary-spacing) / 2.3);
+  font-size: var(--app-font-size-18);
+}
+
+/* Cursors */
+.cursor-pointer {
+  cursor: pointer;
+}
